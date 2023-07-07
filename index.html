@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+        <img src="img/background.jpg" alt="img" id="background">
+    <div class="content">
+        <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus condimentum nec erat vitae volutpat. Fusce
+            id faucibus nibh. Suspendisse eget egestas orci. Cras pulvinar rhoncus libero. Praesent a enim ac sem tempor
+            sollicitudin. Aliquam vitae urna mauris. Proin feugiat dolor eu pretium auctor. Nullam in vestibulum justo.
+            Quisque at dolor magna.</div>
+        <form action="/action_page.php" method="get" id="form1">
+            <div class="first-section">
+                <label for="name">First Name:</label>
+                <input type="text" name="name" id="name" required>
+                <label for="sname">Last Name:</label>
+                <input type="text" name="sname" id="sname" required>
+            </div>
+            <div class="mid-section">
+                <label for="mail">e-mail:</label>
+                <input type="email" name="mail" id="mail" required>
+                <label for="phone">Phone Number:</label>
+                <input type="tel" name="phone" id="phone" maxlength="12" required>
+            </div>
+            <div class="last-section">
+                <label for="pass">Password:</label>
+                <input type="password" name="pass" id="pass" required>
+                <label for="confirm-pass">Confirm Password:</label>
+                <input type="password" name="confirm-pass" id="confirm-pass" required>
+            </div>
+        </form>
+        <button type="submit" form="form1">Create Account</button>
+        <div>Already have an account? <a href="javascript:void(0)">Log in</a></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
