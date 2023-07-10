@@ -5,17 +5,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign-up Form</title>
+    <title>Sign-up Movy</title>
     <link rel="stylesheet" href="style.css">
+    <link
+     rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"
+   />
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
 </head>
 
 <body>
-        <img src="img/background.jpg" alt="img" id="background">
+    <div class="parent">
+        <img src="img/background.jpg" alt="img" id="background" class="image1">
+        <div class="logo">
+        <img src="img/cinema.png" alt="logo" class="image2">
+        <div class="movy">MOVY</div>
+    </div>
+
+    </div>
     <div class="content">
-        <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus condimentum nec erat vitae volutpat. Fusce
-            id faucibus nibh. Suspendisse eget egestas orci. Cras pulvinar rhoncus libero. Praesent a enim ac sem tempor
-            sollicitudin. Aliquam vitae urna mauris. Proin feugiat dolor eu pretium auctor. Nullam in vestibulum justo.
-            Quisque at dolor magna.</div>
+        <div>Introducing Movy - Your cinematic hub! Explore our extensive movie database, read reviews, watch trailers, and engage with a thriving community of movie enthusiasts. Discover hidden gems, revisit classics, and stay updated with the latest releases. Join Movy for an immersive and enjoyable movie experience. Lights, camera, action!</div>
         <form action="/action_page.php" method="get" id="form1">
             <div class="first-section">
                 <label for="name">First Name:</label>
@@ -27,7 +36,7 @@
                 <label for="mail">e-mail:</label>
                 <input type="email" name="mail" id="mail" required>
                 <label for="phone">Phone Number:</label>
-                <input type="tel" name="phone" id="phone" maxlength="12" required>
+                <input id="phone" type="tel" name="phone" />
             </div>
             <div class="last-section">
                 <label for="pass">Password:</label>
@@ -36,10 +45,16 @@
                 <input type="password" name="confirm-pass" id="confirm-pass" required>
             </div>
         </form>
-        <button type="submit" form="form1">Create Account</button>
+        <button type="click" form="form1">Create Account</button>
         <div>Already have an account? <a href="javascript:void(0)">Log in</a></div>
     </div>
     <script src="script.js"></script>
 </body>
-
+<script>
+    const phoneInputField = document.querySelector("#phone");
+    const phoneInput = window.intlTelInput(phoneInputField, {
+      utilsScript:
+        "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+    });
+  </script>
 </html>

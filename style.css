@@ -9,7 +9,7 @@ body {
 
 #background {
     min-height: 100vh;
-    max-height: 25vh;
+    max-height: 500px;
 }
 
 .content {
@@ -19,3 +19,44 @@ body {
     flex-direction: column;
     gap: 25px;
 }
+
+.parent{
+    position: relative;
+    top: 0;
+    left: 0;
+    
+  }
+  
+  .image1 {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+  
+  .image2 {
+    position: absolute;
+    top: 30vh;
+    left: 200px;
+    width: 50px;
+  }
+
+  .movy{
+    position: absolute;
+    top: 30vh;
+    left: 260px;
+    color: aliceblue;
+    font-size: 40px;
+  }
+
+  .logo{
+    background-color: black;
+    opacity: 0.8;
+    width: 500px;
+  }
+
+  input{
+    margin: 20px;
+    height: 30px;
+    border-radius: 4%;
+
+  }
