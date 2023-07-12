@@ -7,45 +7,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-up Movy</title>
     <link rel="stylesheet" href="style.css">
-    <link
-     rel="stylesheet"
-     href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"
-   />
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
 </head>
 
 <body>
     <div class="parent">
         <img src="img/background.jpg" alt="img" id="background" class="image1">
         <div class="logo">
-        <img src="img/cinema.png" alt="logo" class="image2">
-        <div class="movy">MOVY</div>
-    </div>
+            <img src="img/cinema.png" alt="logo" class="image2">
+            <div class="movy">MOVY</div>
+        </div>
 
     </div>
     <div class="content">
-        <div>Introducing Movy - Your cinematic hub! Explore our extensive movie database, read reviews, watch trailers, and engage with a thriving community of movie enthusiasts. Discover hidden gems, revisit classics, and stay updated with the latest releases. Join Movy for an immersive and enjoyable movie experience. Lights, camera, action!</div>
+        <div class="info">Introducing Movy - Your cinematic hub! Explore our extensive movie database, read reviews,
+            watch trailers, and engage with a thriving community of movie enthusiasts. Discover hidden gems, revisit
+            classics, and stay updated with the latest releases. Join Movy for an immersive and enjoyable movie
+            experience. Lights, camera, action!</div>
         <form action="/action_page.php" method="get" id="form1">
-            <div class="first-section">
-                <label for="name">First Name:</label>
-                <input type="text" name="name" id="name" required>
-                <label for="sname">Last Name:</label>
-                <input type="text" name="sname" id="sname" required>
+            <div class="section">
+                <div class="ep1">
+                    <label for="name">First Name:</label>
+                    <input type="text" name="name" id="name" required>
+                </div>
+                <div class="ep1">
+                    <label for="sname">Last Name:</label>
+                    <input type="text" name="sname" id="sname" required>
+                </div>
             </div>
-            <div class="mid-section">
-                <label for="mail">e-mail:</label>
-                <input type="email" name="mail" id="mail" required>
-                <label for="phone">Phone Number:</label>
-                <input id="phone" type="tel" name="phone" />
+            <div class="section">
+                <div class="ep1">
+                    <label for="mail">E-mail:</label>
+                    <input type="email" name="mail" id="mail" required>
+                </div>
+                <div class="ep1">
+                    <label for="phone">Phone Number:</label>
+                    <input id="phone" type="tel" name="phone"/>
+                </div>
             </div>
-            <div class="last-section">
-                <label for="pass">Password:</label>
-                <input type="password" name="pass" id="pass" required>
-                <label for="confirm-pass">Confirm Password:</label>
-                <input type="password" name="confirm-pass" id="confirm-pass" required>
+            <div class="section">
+                <div class="ep1">
+                    <label for="pass">Password:</label>
+                    <input type="password" name="pass" id="pass" required>
+                </div>
+                <div class="ep1">
+
+                    <label for="confirm-pass">Confirm Password:</label>
+                    <input type="password" name="confirm-pass" id="confirm-pass" required>
+                    <div class="result"></div>
+                </div>
             </div>
         </form>
-        <button type="click" form="form1">Create Account</button>
+        <button form="form1" class="button-85">Create Account</button>
         <div>Already have an account? <a href="javascript:void(0)">Log in</a></div>
     </div>
     <script src="script.js"></script>
@@ -53,8 +67,10 @@
 <script>
     const phoneInputField = document.querySelector("#phone");
     const phoneInput = window.intlTelInput(phoneInputField, {
-      utilsScript:
-        "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+        utilsScript:
+            "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
     });
-  </script>
+</script>
+<script src="script.js"></script>
+
 </html>
