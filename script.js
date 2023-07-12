@@ -1,19 +1,30 @@
-let pass=document.querySelector("#pass");
-let con_pass=document.querySelector("#confirm-pass");
-let button=document.querySelector(".button-85");
-let result=document.querySelector(".result");
+var pass=document.querySelector("#pass");
+var con_pass=document.querySelector("#confirm-pass");
+var button=document.querySelector(".button-85");
+var result=document.querySelector(".result");
+var bool=false;
 
 function match(){
     if(pass.value == con_pass.value){
         result.innerText="";
+        con_pass.setCustomValidity("");
+        return true;
     }else{
         result.innerText="Dont match"
+        bool=false;
+        console.log("else ici"+bool);
+        con_pass.setCustomValidity("Passwords dont match!");
+        return false;
+
     }
+    console.log("fonk ici"+bool);
+
 }
 
-button.addEventListener('click',() => {
-    match();
-    //location.reload();
+button.addEventListener('onclick',(e) => {
+    if(match()){
+    e.preventDefault();
+    }
   });
 
   pass.addEventListener('keyup' ,()=>{

@@ -1,10 +1,12 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
     display: flex;
+    overflow: hidden;
 }
 
 #background {
@@ -30,6 +32,7 @@ body {
   }
   
   .image1 {
+    height: 100%;
     position: relative;
     top: 0;
     left: 0;
@@ -57,7 +60,8 @@ body {
   }
 
   input{
-    height: 30px;
+    width: 300px !important;
+    height: 40px !important;
     border-radius: 4%;
   }
 /* CSS */
@@ -130,7 +134,7 @@ body {
 }
 
 input:focus{
-  outline: 2px solid rgb(29, 192, 233);
+  background-color: rgb(29, 192, 233);
 }
 
 form{
