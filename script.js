@@ -1,16 +1,13 @@
 var pass=document.querySelector("#pass");
 var con_pass=document.querySelector("#confirm-pass");
 var button=document.querySelector(".button-85");
-var result=document.querySelector(".result");
 var bool=false;
 
 function match(){
     if(pass.value == con_pass.value){
-        result.innerText="";
         con_pass.setCustomValidity("");
         return true;
     }else{
-        result.innerText="Dont match"
         bool=false;
         console.log("else ici"+bool);
         con_pass.setCustomValidity("Passwords dont match!");

@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-up Movy</title>
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/lucymar-sans" type="text/css"/>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
@@ -43,7 +44,7 @@
                 </div>
                 <div class="ep1">
                     <label for="phone">Phone Number:</label>
-                    <input id="phone" type="tel" name="phone"/>
+                    <input id="phone" type="tel" name="phone" pattern="[0-9]+" />
                 </div>
             </div>
             <div class="section">
@@ -55,12 +56,11 @@
 
                     <label for="confirm-pass">Confirm Password:</label>
                     <input type="password" name="confirm-pass" id="confirm-pass" required>
-                    <div class="result"></div>
                 </div>
             </div>
         </form>
-        <button form="form1" class="button-85">Create Account</button>
-        <div>Already have an account? <a href="javascript:void(0)">Log in</a></div>
+        <button form="form1" class="button-85">Sign-up</button>
+        <div class="footer">Already have an account? <a href="javascript:void(0)">Log in</a></div>
     </div>
     <script src="script.js"></script>
 </body>
