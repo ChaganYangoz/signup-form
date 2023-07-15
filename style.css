@@ -68,7 +68,10 @@ body {
   input{
     width: 300px !important;
     height: 40px !important;
-    border-radius: 4%;
+    background-color: #2D4356;
+    border: 1.5px solid #000;
+    padding: 10px;
+
   }
 /* CSS */
 .button-85 {
@@ -142,7 +145,8 @@ body {
 }
 
 input:focus{
-  background-color: rgb(29, 192, 233);
+  background-color: #639cd9;
+
 }
 
 form{
